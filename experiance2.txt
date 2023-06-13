@@ -1,0 +1,146 @@
+Application_ids_other :- 
+Other Applications
+
+Payment APplicable only to BMW and PLASTIC
+
+
+TUSHAR, 1:02 PM
+Other Application Status
+Null => Pending
+1 => Approved
+2 => Rejected
+3 => Awaited
+
+
+TUSHAR, 1:20 PM
+select * from bmw_for_consent bfc 
+
+
+select * from bmw_for_consent bfc 
+TUSHAR PATIL, Today at 1:20 PM
+Association table for Application_ids i.e CONSENT
+and Application_ids_other i.e. BMW_AUTH
+
+BMW TABLE NAMES
+Non BEDED - non_beded_bmw
+BEDED/R&D/FACILITY - bmw_authorization
+
+example query for non beded:-
+select top 10 * from Application_ids_other ids 
+join non_beded_bmw nbb on nbb.id = ids.Application_id 
+where [type] = 'BMW_AUTH'
+and ids.second_phase = 2
+order by created_time desc
+
+eexample query for beded
+select top 10 ids.Unique_id,ba.institution_name,ax.number_of_beds  from Application_ids_other ids 
+join bmw_authorization ba on ba.id = ids.Application_id 
+join annexure_1 ax on ax.bmw_id = ba.id
+where [type] = 'BMW_AUTH'
+and ids.second_phase != 2
+order by created_time desc
+
+ba.type_of_institution 
+
+PLASTIC Application payment 500Rs
+
+Environment Stmt:
+
+select * from environment_records er 
+select * from environment_statement es 
+
+
+TUSHAR, 1:43 PM
+MPCB-BG-0000000000
+
+select * from bg
+
+status
+Return
+Forfeit- PARITAL FORFEIT
+FULL FORFIET
+EXTEND
+
+select * from application_for_by_products afbp 
+
+
+select * from Application_ids ids 
+join Applicant a on a.Id = ids.Application_id 
+join industry i on i.Id = a.Industry_id 
+where 
+ids.Payment_received = 1
+---
+
+select * from application_white_category_ids awci
+
+SELECT * FROM admin_user WHERE designation='SRO'
+
+SELECT * from Application_ids_other WHERE Unique_id ='mpcb-bmw_auth-0000028248'
+
+SELECT * from Application_ids_other WHERE [TYPE]='BMW_AUTH' ORDER  BY created_time DESC 
+
+SELECT * from Application_ids WHERE Unique_id ='MPCB-CONSENT-0000000973'
+
+select * FROM bmw_for_consent WHERE consent_id ='MPCB-CONSENT-0000028248'
+
+SELECT * FROM non_beded_bmw
+SELECT submit_to FROM consent_white_category cwc 
+select * from save_dra
+
+
+
+
+leagal action and visit
+===================================================================================
+Normal Visit - allocated via Randomization
+
+Surprise Visit
+
+select * from visit_scheduler vs 
+.
+
+industry_verified_mod
+
+
+TUSHAR, 2:54 PM
+legal_action_unit_complied
+
+
+legal_action_unit_complied
+TUSHAR PATIL, Today at 2:54 PM
+column in routine_report table
+
+
+legal_action_unit_complied
+TUSHAR PATIL, Today at 2:54 PM
+If unit complies then no need of legal action
+
+if not complied than board takes legal action
+
+SRO - Warning Notice
+
+RO - 
+Show Cause Notice
+Closure (with Approval of MS)
+Proposed Directions
+
+Interim Directions
+
+Restart (Approval of MS)
+
+Legal Action
+Application based
+Visit based
+
+
+TUSHAR, 3:15 PM
+in case of PD hearing is conducted
+
+and MOM is uploaded
+
+Satisfactory/Not Satisfactory
+
+select * from legal_actions la 
+select * from legal_directions where legal_actions_id = 406
+
+select * FROM legal_actions_flow WHERE unique_id = 'MPCB-LEGAL_ACTIONS-020519002'

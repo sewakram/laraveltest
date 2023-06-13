@@ -1,0 +1,220 @@
+Laravel Breeze implementation
+
+15 Feb 2023 | Sewakram deshmukh | MPCB
+Previous Tasks
+1.Work on closing remark functionality update.
+2.To work on new add more functionality for o21 industry in annexure section.
+3.Daily huddle and task assignment.
+Today Tasks  
+1.Work on annual report stataus for MSW and CD functionality integration.
+2.Work on committe and agenda  module functionality integration.
+3.Work on covid19 BMW records module for date picker bugfixes.
+4.Daily huddle and work task assignment.
+-Issue with client / in code implementation
+No
+due to catract surgery of my father i need to take leave for some days that is on 23,24,30 of Jan 2023 and 25 ,27 Jan work from home
+Work on Payment Reconciliation Cess section for functionality and template integration
+Work on generate new AO Number functionality integration in cess module.
+Work on Online DR cess section functionality and listing Online DR display,Add online DR,Link DR,Block DR.
+Work on Assessment Order (Month Wise),Collection Report (Month Wise) in cess report module
+Work on Payments Details,Consent Application Report, in accounts module
+Work on JVS Payment list,Approve Payment,Industry Ledger and details display in JVS module.
+work on JVS online DR,JVS overall ledger and filter functionality in JVS module
+Work on online DR lisitng,Add Online DR Entry,Block dr no.,Dr cashbook listing,add manual dr and filter functionality integration
+Work on Consent Ledger listing and filter,Consent Ledger report,View ledger same things done for plastic ledger,BMW ledger,consent panel ledger,plastic panel ledger,BMW panel ledger also work on transfer journal entries functionality integration
+Work on plastic panel ledger,BMW panel ledger listing and filter,Consent Ledger report,View ledger also work on transfer journal entries functionality integration
+Work on Offline Payment Received List,filter and other applications display functionality integration.
+Work on Payment Reconciliation for listing and filter functionality in payment concilation module.
+Work on to display Invalid Payments (Auth) listing,filtering and pagination functionality integration.
+Work on email functionality to verify Minutes
+Work on functionality to send email for application_process_success_mail and application_process_regect_mail
+Work on recived payment display and filtering list functionality.
+Work on functionality to listing and filtering other payment module.
+Work on listing and filtering functionality for recived payment other module.
+Work done on sidebar of inventory.
+Work done on sidebar of JVS.
+Work on auditor sidebar and functionality integration
+Work on deployment of common sidebar,jvs,inventory and auditor changes.
+Work on testing,bug fixes and deployment of email functionality in CC .
+Work on ULB sidebar and its functionality integration.
+Work on bugfixes and deployment of ULB sidebar and modules
+Work on training management module template integration for user update.
+Work on Team module functionality integration and bug fixes.
+Work on By Products Applications module sub sections like Application List,view details,edit,download,enable edit functionality integration
+Work on Employee Submitted CR List module sub sections like All Employee List,Add Reporting & Reviewing Officer,Update Reporting & Reviewing Officer Period,add EB details,View details
+Work on consumption list module for list display,filtering and sub actions functionality integration
+Work con consumption book listing filteringand actions functionality integration.
+
+sewakramdeshmukh66@gmail.com
+10.0.28.123
+255.255.255.0
+10.0.30.9
+10.0.30.9,8.8.8.8
+  0e7517141fb53f21ee439b355b5a1d0a
+  a984ed2633cef48a12b46bfe7874356d
+ALTER TABLE manual_ledger_entry ADD id int NOT NULL IDENTITY primary key FIRST
+ALTER TABLE consent_annexure_chemi_remark ADD chemical_consent_type varchar(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+ALTER TABLE consent_annexure_ec_remark ADD o21_consent_type varchar(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+
+CREATE TABLE mpcb_test.dbo.recipients (
+	id int IDENTITY(1,1) NOT NULL,
+	recipients_name varchar(200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	email varchar(200) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	email_request_id bigint NULL,
+	email_sent_on datetime NULL,
+	CONSTRAINT PK__payment___3213E83F4785D0F4 PRIMARY KEY (id)
+);
+
+CREATE TABLE mpcb_test.dbo.consent_annexure_ec (
+	id int IDENTITY(1,1) NOT NULL,
+	ec_date datetime NULL,
+	cap_investment bigint NULL,
+	total_plot_area bigint NULL,
+	total_builtup_area bigint NULL,
+	amendment varchar(200) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	
+	CONSTRAINT PK__payment___3213E83F4785D0F4 PRIMARY KEY (id)
+);
+MPCB-REFUND-0000000237   MPCB-CONSENT-0000106791
+ MPCB-REFUND-0000000238  MPCB-CONSENT-0000106789
+CREATE TABLE mpcb_test.dbo.payment_approved_log (
+	biller_name varchar(200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	bd_ref_no varchar(200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	ref_1 varchar(200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	ref_2 varchar(200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	ref_3 varchar(200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	ref_4 varchar(200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	ref_5 varchar(200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	ref_6 varchar(200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	ref_7 bigint NULL,
+	ref_8 varchar(200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	created_on datetime NULL,
+	gross_amount decimal(18,2) NULL,
+	id int IDENTITY(1,1) NOT NULL,
+	CONSTRAINT PK__payment___3213E83F4785D0F4 PRIMARY KEY (id)
+);
+  1,7,8,13,17,23,35,963,28
+git add .
+or
+git add path/to/directoryOnly 
+
+git config --local user.name "Nirav J"
+git config --local user.email "nirav@webol.co.uk"
+
+git commit -m "recent feedback comments fixed "
+
+git push origin <your branch>
+
+Determining If A View Exists and Passing Data To Views
+
+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
+
+git push https://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@github.com/sewakram/laraveltest.git
+Exposer on javascript Datatypes,Operators,conditions,looping,array,function
+
+php artisan make:migration create_products_table --create=product   s
+php artisan migrate
+php artisan make:controller ProductController --resource --model=Product
+
+
+$2y$10$HOa25VhIJbwjv3yFGLgVnOhTsVy01o8G1XjuHg7qeqXlxMcKfkvb6
+
+git clone https://niravjwebol@bitbucket.org/niravjwebol/mountain_spy.git
+Username: niravjwebol
+Password: niravJ321
+
+git config --local user.name "Nirav J"
+git config --local user.email "nirav@webol.co.uk"
+admin:http://manage.ecmpcb.in/dashboard u:CM/admin p:Admin@123
+solvency certificate report,search functionality and pdf generation,announcement, prefield rekyc,voucher record management,CACOB,CACTST schame CTST validation,ECRF section sr/nsr tagging,integrate maximus sso functionality,STP enhancement to prevent contact update for individual current account,account transfer,SR account transfer via process journey,Popup disply for IB/MB services,saksham micro service api development in laravel lumen for checkbook issue,DOB update,Contact Update,
+
+
+$db['default']['hostname'] = '125.17.249.60:4444';
+$db['default']['username'] = 'webwerks';
+$db['default']['password'] = 'webwerks123!@#';
+$db['default']['database'] = 'mpcb_test';
+
+git clone http://180.149.243.244:8080/scm/git/mpcb-git .
+clone url: http://180.149.243.244:8080/scm/git/mpcb-git
+username: aatish.gore
+password: aatishg123
+
+for Admin  branch name is admin_clone
+for Production branch name is production_modified
+
+Fixing dbeaver connection issue of jdbc mssql driver
+
+…or create a new repository on the command line
+echo "# react-js-" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/sewakram/react-js-.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/sewakram/react-js-.git
+git branch -M main
+git push -u origin main
+
+
+for production sayan.pal@wwindia.com / Admin@123
+
+change php cli use this export PATH="/opt/lampp/bin:$PATH"
+sudo /opt/lampp/manager-linux-x64.run
+to run lumen php -S localhost:8000 -t public
+for admin you can find the same from admin_user table from web_user col of table
+
+and password is Admin@123
+
+Fees Applicable to following Applications:
+Consent
+BMW
+Plastic
+
+Green => 3 Years
+Orange => 2 Years
+Red => 1 Year
+
+
+TUSHAR, 1:10 PM
+Status 1 => Reject
+Status 2 => Approved
+Status 3 => Awaited
+
+
+TUSHAR, 1:16 PM
+Chairman
+Member Secretary
+HOD (6)
+
+Regional Officer
+
+Sub Regional Officers
+In application_ids ro_assignment hi sro id hai
+Field Officer
+select * from Application_ids where Unique_id = 'MPCB-CONSENT-0000135252'
+select * from consent_task_flow where Unique_id = 'MPCB-CONSENT-0000135252' order by created_date
+
+print_r($this->db->last_query());
+Select i.id as industry_id,i.IndustryName,i.Address from Application_ids ai 
+      JOIN Applicant a ON a.id = ai.Application_id 
+      JOIN industry i ON i.id = a.Industry_id 
+      JOIN Applicant_payment_details apd on apd.ApplicantId = a.id AND apd.id = (Select TOP 1 id from Applicant_payment_details where ApplicantId = a.id AND Payment_received = 1)
+      group by i.id,i.IndustryName,i.Address
+      order by i.id
+      
+Select ai.Unique_id,apd.Transation_type,apd.amount,apd.[date],apd.DR_No,apd.Transation_id_Dd_no from Applicant_payment_details apd 
+      JOIN Application_ids ai ON ai.Application_id = apd.ApplicantId 
+      JOIN Applicant a ON a.id = apd.ApplicantId 
+      where apd.Payment_received = 1 AND a.Industry_id = 42
+
+
+	  i am writing this letter to notify you that i am resigning from my position as software engineer of neosoft technologies, effective 18/05/2023 
+
+i appreciate the opportunity for professional growth you have provided during my time at neosoft technologies . Thanks for your support and encouragement.
+
+please let me know how i can help during the transition period.I wish you and the company best future ahead.
+
+
+git add application/controllers/accounts.php application/controllers/cess.php application/controllers/cess_report.php application/controllers/jvs.php application/models/cess_model.php application/models/jvs_model.php application/views/admin/accounts/details.php application/views/admin/accounts/payments.php application/views/admin/cess/add.php application/views/admin/cess/all_ledger.php application/views/admin/cess/ao_list.php application/views/admin/cess/ao_task_flow.php application/views/admin/cess/cash_book.php application/views/admin/cess/cess_send_email.php application/views/admin/cess/change_log.php application/views/admin/cess/consumption_details.php application/views/admin/cess/deleted_log.php application/views/admin/cess/industry_consumption_list.php application/views/admin/cess/ledger.php application/views/admin/cess/manual_payment.php application/views/admin/cess/online_dr_add.php application/views/admin/cess/online_dr_list.php application/views/admin/cess/reading_details.php application/views/admin/cess/received_payments.php application/views/admin/cess/settlement.php application/views/admin/cess/verify_readings.php application/views/admin/cess/view_settlement.php application/views/admin/cess_report/assessment_order.php application/views/admin/cess_report/assessment_order_month.php application/views/admin/cess_report/collection_report.php application/views/admin/cess_report/collection_report_month.php application/views/admin/cess_report/ledger_balance.php application/views/admin/jvs/add_dr.php application/views/admin/jvs/add_outstanding.php application/views/admin/jvs/cb_list.php application/views/admin/jvs/dr_list.php application/views/admin/jvs/industry_list.php application/views/admin/jvs/ledger_list.php application/views/admin/jvs/ledger_report.php application/views/admin/jvs/payments_list.php application/views/admin/jvs/update_dr.php application/views/admin/jvs/view_ledger.php application/views/admin/online_payment/payment_conciliation_cess.php application/views/admin/template/sidebar.php application/views/admin/cess/cess_overall_ledger.php application/views/admin/jvs/jvs_overall_ledger.php
